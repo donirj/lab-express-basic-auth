@@ -1,0 +1,31 @@
+para hacer el signup, debemos hacer el modelo 
+en el User.model.js
+
+luego hacer el formato en hbs
+
+luego hacer la ruta en el app que va conectada al
+nuevo archivo auth.js de routes que lleva:
+-
+const express =  require("express")
+const router = express.Router()
+
+const  authController = requore("./../") 
+-
+
+en el authController empezamos con el bcrypjs,
+con estas lineas
+-
+const bcryptjs = require("bcryptjs")
+const saltRounds = 10
+const User = require("./../models/User")
+-
+
+despues se crea el exports post, que lleva la parte
+de bcryptjs y saltRounds
+
+se hace el formulario en el archivo login hbs
+
+se hace la ruta que acabamos de hacer en auth.js
+y despues su exports 
+
+session config es para setear al usuario actual en el req

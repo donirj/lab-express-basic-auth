@@ -1,0 +1,11 @@
+<form action="/auth/login" method="POST">
+    <label for="username">username/email</label>
+    <input type="text" name="username" placeholder="username">
+        <hr>
+     <label for="password">pass</label>
+    <input type="text" name="password" placeholder="password">
+        <hr>
+        <span>{{errorMessage}}</span>
+        <button type="submit">login</button>
+
+</form>
